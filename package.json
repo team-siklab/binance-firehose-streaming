@@ -1,0 +1,25 @@
+{
+  "name": "binance-firehose-streaming",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Richard Neil Ilagan <705310+richardneililagan@users.noreply.github.com>",
+  "scripts": {
+    "start": "node -r dotenv/config src/index",
+    "lint": "eslint './src/**/*.{js,jsx,ts,tsx}' -f stylish"
+  },
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-unicorn": "^32.0.1",
+    "prettier": "^2.3.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.913.0",
+    "dotenv": "^10.0.0",
+    "node-binance-api": "^0.12.5"
+  }
+}
