@@ -8,7 +8,7 @@ const firehose = new AWS.Firehose({ region: 'ap-southeast-1' })
 
 // :: ---
 
-const STREAM_NAME = 'trades-stream' // :: change this to your stream name
+const STREAM_NAME = process.env.STREAM_NAME || 'trades-stream' // :: change this to your stream name
 const SYMBOL = process.argv[2] || 'BTCUSDT'
 
 // :: ---
